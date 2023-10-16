@@ -2,6 +2,9 @@
     import axios from 'axios'
 
     export default {
+        // props: {
+        //     message: ''
+        // },
         data() {
             return {
                 file: '',
@@ -15,7 +18,7 @@
                 this.message2 = ''
                 let formData = new FormData();
                 formData.append('file', this.file);
-                axios.defaults.baseURL = "https://api.chess.rfcontract.ru"
+                axios.defaults.baseURL = "https://api-chess.rfcontract.ru"
                 axios.post('/upload', formData, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
