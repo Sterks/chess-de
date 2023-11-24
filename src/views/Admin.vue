@@ -1,19 +1,18 @@
 <script>
-import Import from '../components/Import.vue';
-import VueExportInfo from '../components/VueExportInfo.vue'
+// import Import from '../components/Import.vue';
+import ImportFile from '../components/ImportFile.vue';
 
-    export default {
+export default {
     data() {
         return {};
     },
-    components: { Import, VueExportInfo }
+    components: { ImportFile }
 }
 </script>
 
 <template>
     <div>
-        <Import />
-        <VueExportInfo />
+        <ImportFile />
     </div>
 </template>
 
